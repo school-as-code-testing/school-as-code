@@ -1,0 +1,83 @@
+# this is the configuration file for starting a class
+# after the class is generated addition data is rendered into "state"
+#   project board numbers, milestone numbers, ...
+#   data necessary to generate links in the READMEs
+
+# documentation for earlier POC: https://github.com/lab-antwerp-1/home/tree/main/admin
+
+
+# -- this data used to generate org and home repo
+#  setup includes settings, labels, milestones, project boards, teams, discussions, ...
+#  home repo starts from a template such as: https://github.com/lab-antwerp-1/home
+orgName: lab-antwerp-1 # name of github organization to generate
+homeRepo: home # name of main repository
+boards: # which project boards will you want in the home repo?
+  - name: deliverables
+    description: "text to put in the project board description"
+  - name: side-projects
+# these are optional, module URLs can also be declared explicitly
+curriculumUserName: HackYourFutureBelgium
+curriculumOrigin: https://home.hackyourfuture.be/curriculum
+
+# module data is used to render the README's in home, coach-signup, admin & student repos
+modules:
+  # default board to use for rendered module links
+  board: deliverables
+  details:
+    - name: moduleName # if no URL is provided, used to render github links
+      chapters: 0 # providing no chapters field defaults to 0
+      board: side-projects # individual modules can over-ride the board
+      # if present and true, the module has a final assessment
+      assessment: optional
+      # if present, used instead of curriculumUserName to generate github repo links
+      userName: optional
+      # if present, used directly instead of rendering links to content
+      url: optional
+
+
+
+# these people will be added to the admin team in the org
+# they will have access to all repositories:
+#   admin, home, coach-signup, private student repos
+admins:
+  repo: admin # name to use for the private admin repo
+  - name: someone
+    userName: something
+    homePage: optional
+
+
+
+# these people will be added to the coach team
+# they will have access to these repositories:
+#   home, coaches
+# the coaches repo is used for:
+#   planning & scheduling classes in issues+board
+#   sharing notes/plans in the repo
+#   helpful links rendered into the README
+coaches:
+  repo: coaches # name to use for coaches repo
+  - name: someone
+    userName: something
+    homePage: optional
+    modules:
+      - names
+      - of
+      - modules
+      - they
+      - supported
+
+
+# these people will be added to the students team
+# they will have access to these repositories:
+#   home, their own private repo
+# private repos are used for:
+#   submitting module retrospectives
+#   submitting assessments
+#   private notes between admins and students
+#   POC: https://github.com/colevandersWands/student-repo
+students:
+  - name: someone
+    # user names are used to generate private student repos
+    #  github/orgName/userName
+    userName: something
+    homePage: optional
