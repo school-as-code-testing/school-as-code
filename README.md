@@ -6,7 +6,7 @@ The only thing that we can't do via the API is set up a new org, so go ahead and
 
 ## Creating a personal access token
 
-If you need some help, check out [this documentation](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
+If you need some help, check out [this documentation](https://.material.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
 
 You should only need the full repo and org scopes to be able to complete the actions here.
 

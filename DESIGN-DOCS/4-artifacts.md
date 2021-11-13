@@ -105,7 +105,7 @@ used for learners to share in private with the class admins, this might include 
 
 In the base-case a material can be anything with a URL, but why not have an optional "standard" format for materials? It should be a minimal standard that more adds a layer of "educationyness" on top of whatever you want instead of prescribing what to make.
 
-Here is [a rough idea](https://github.com/school-as-code-testing/a-module). The most important parts are in the `/docs` folder & the README, designed to help a learner navigate your material, everything else is up to the author. The key features are (inspired by [4cid](https://www.4cid.org/)):
+Here is [a rough idea](https://github.com/school-as-code-testing/a-module). The most important parts are in the `/.material` folder & the README, designed to help a learner navigate your material, everything else is up to the author. The key features are (inspired by [4cid](https://www.4cid.org/)):
 
 - a general introduction to the material
 - prioritized learning objectives
