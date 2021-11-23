@@ -6,7 +6,7 @@ In the world of [free-range learning](https://teachtogether.tech/en/index.html#g
 
 - **learner**: you are studying to learn a new skill.
 - **peer learners**: you are learning something together and have something to offer each other
-- **peer leader**: you are not an expert, but know enough more than the others to take the lead in a group of peer learners
+- **More Knowledgeable Others**: you are not an expert, but know a bit more than the others on a specific topic to take the lead in a group of peer learners within this limited context. It is possible to be the More Knowledgeable Other on one specific topic while being a peer learner for others, 
 - **[end-user teacher](https://teachtogether.tech/en/index.html#g:end-user-teacher)**: you have solid content knowledge and can guide learners, but do not have much experience teaching the topic
 - **content curator**: you are curating or creating the materials others will study
 - **facilitator**: you may or may not have knowledge of the content, but are responsible for coordinating the learner's experience (scheduling, logistics, mediation, ...)
